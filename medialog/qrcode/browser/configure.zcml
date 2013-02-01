@@ -3,11 +3,4 @@
            <browser:page		for="*"        name="qrimage"		class="medialog.qrcode.browser.qrview.QRImage"        permission="zope2.View"
         />
 
-                <browser:menuItem
-            	for="*"
-            	menu="plone_displayviews"
-            	title="QR code"
-            	action="qrimage"
-            	description="Make QR code image."
-        />
-    </configure>
+    </configure>
