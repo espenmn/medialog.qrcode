@@ -5,4 +5,4 @@ Changelog
 0.1 (012.01.2013)
 -------------------
 
-- Initial release [espenmn]
+- Initial release [espenmn] 
