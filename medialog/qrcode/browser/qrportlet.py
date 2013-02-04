@@ -8,6 +8,9 @@ from zope.formlib import form
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from plone.memoize.instance import memoize
 
+from zope.component import getMultiAdapter
+
+
 #from medialog.qrcode import MessageFactory as _
 from Products.CMFPlone import PloneMessageFactory as _
 
@@ -61,6 +64,15 @@ class Renderer(base.Renderer):
     """
 
     render = ViewPageTemplateFile('qrportlet.pt')
+    
+    portal_state = getMultiAdapter((context, self.request), name=u'plone_portal_state')
+    self.anonymous = portal_state.anonymous()  # whether or not the current user is Anonymous
+        
+    
+    @property
+    def available(self):
+        """Show the portlet only if some condition. Need to test this."""
+        return not self.anonymous 
 
 
 class AddForm(base.AddForm):
