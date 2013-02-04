@@ -1,0 +1,8 @@
+<dl class="portlet portletQRPortlet">
+        <dd class="portletItem">
+                     
+               <img src="" alt=""  tal:attributes="src context/qrcode"  />
+            
+    </dd>
+
+</dl>
