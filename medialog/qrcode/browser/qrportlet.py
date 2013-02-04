@@ -9,6 +9,9 @@ from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from plone.memoize.instance import memoize
 
 #from medialog.qrcode import MessageFactory as _
+from Products.CMFPlone import PloneMessageFactory as _
+
+
 
 class IQRPortlet(IPortletDataProvider):
     """A portlet
