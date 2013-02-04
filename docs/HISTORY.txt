@@ -1,8 +1,16 @@
 Changelog
 =========
 
+0.2 (04.02.2013)
+-------------------
 
-0.1 (012.01.2013)
+- added settings and changed name of browser view [espenmn] 
+
+
+
+0.1 (01.02.2013)
 -------------------
 
 - Initial release [espenmn] 
+
+

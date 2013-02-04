@@ -12,6 +12,10 @@ PasteDeploy-1.5.0-py2.7.egg/*
 
 PasteDeploy-1.5.0-py2.7.egg/ 
 *.gz
+ 
 
-*.pyc
-*.pyc
+medialog/qrcode/browser/qrview.pyc
+
+medialog/qrcode/browser/__init__.pyc
+
+medialog/qrcode/__init__.pyc
