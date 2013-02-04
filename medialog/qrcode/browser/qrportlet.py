@@ -28,6 +28,21 @@ class IQRPortlet(IPortletDataProvider):
     # information. Alternatively, if there are no settings, leave this as an
     # empty interface - see also notes around the add form and edit form
     # below.
+    
+    condition = schema.Bool(
+        title=_(u"label_title_condition",
+            default=u"Show for not logged in users."),
+        description=_(u"label_description_condition",
+            u"You can choose to show this only for logged in users."),
+    )
+    
+    size = schema.Int(
+        title=_(u"label_title_size",
+            default=u"Size for the qrcode."),
+        description=_(u"label_description_size",
+            u"How big should the qr code image be?"),
+            defult = '4',
+    )
 
 class Assignment(base.Assignment):
     """Portlet assignment.
