@@ -36,8 +36,7 @@ class QRImage(BrowserView):
     	if view <> '':
     		url = url + '/' + view
     	if other_url <> '':
-    		url = other_url
-    		
+    		url = other_url		
     		
         qr = qrcode.QRCode(
             version=1,

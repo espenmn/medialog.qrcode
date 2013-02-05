@@ -4,7 +4,7 @@ Changelog
 0.1.4 (05.02.2013)
 -------------------
 
-- added portlet [espenmn] 
+- added settings and switched to absolute url for the code [espenmn] 
 
 
 0.1.3 (05.02.2013)

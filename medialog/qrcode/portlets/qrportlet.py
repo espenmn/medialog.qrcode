@@ -46,7 +46,7 @@ class IQRPortlet(IPortletDataProvider):
         max = 40,
     )
     
-    border_size = schema.Int(
+    bordersize = schema.Int(
         title=_(u"label_title_bordersize",
             default=u"Size for the border."),
         description=_(u"label_description_bordersize",
@@ -73,10 +73,10 @@ class Assignment(base.Assignment):
     # def __init__(self, some_field=u""):
     #    self.some_field = some_field
     
-    def __init__(self, anoncondition=True, size=4, border_size=4):
+    def __init__(self, anoncondition=True, size=4, bordersize=4):
         self.anoncondition = anoncondition
         self.size = size
-        self.border_size = border_size
+        self.bordersize = bordersize
 
     @property
     def title(self):
@@ -92,8 +92,16 @@ class Renderer(base.Renderer):
     rendered, and the implicit variable 'view' will refer to an instance
     of this class. Other methods can be added and referenced in the template.
     """
-
+    
     render = ViewPageTemplateFile('qrportlet.pt')
+    
+    def thepath(self):
+        context = self.context
+        size=self.data.size
+        bordersize=self.data.bordersize
+        full_url = context.absolute_url() 
+        qrcodepath = str(full_url) + '/qrcode?size=' + str(size) + '&border=' + str(bordersize)
+        return qrcodepath
     
     @property
     def available(self):
