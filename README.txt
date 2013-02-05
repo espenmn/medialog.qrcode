@@ -2,8 +2,10 @@ Introduction
 ============
 
 This product adds a browser view that generates a QRcode for the given page.
+It also adds a portlet that will show a QR code. 
 
-Use it like this:
+
+Use the browser view like this:
 
 http://mysite.com/mypage/@@qrcode
 To get a qrcode for http://mysite.com/mypage 

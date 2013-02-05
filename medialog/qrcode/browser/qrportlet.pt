@@ -1,8 +1,0 @@
-<dl class="portlet portletQRPortlet">
-  <dd class="portletItem">
-	   <img tal:define="code string: @@qrcode?size=${view/data/size}; 
-						klass string: qrsize-${view/data/size}"
-						tal:attributes="src code; class klass" 
-						alt="QR code"  />
-  </dd>
-</dl>

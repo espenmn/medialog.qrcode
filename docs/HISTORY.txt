@@ -1,7 +1,19 @@
 Changelog
 =========
 
-0.2 (04.02.2013)
+0.1.4 (05.02.2013)
+-------------------
+
+- added portlet [espenmn] 
+
+
+0.1.3 (05.02.2013)
+-------------------
+
+- added portlet [espenmn] 
+
+
+0.1.2 (04.02.2013)
 -------------------
 
 - added settings and changed name of browser view [espenmn] 

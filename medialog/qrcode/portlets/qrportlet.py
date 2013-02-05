@@ -42,6 +42,18 @@ class IQRPortlet(IPortletDataProvider):
         description=_(u"label_description_size",
             u"How big should the qr code image be?"),
         default = 4,
+        min = 1,
+        max = 40,
+    )
+    
+    border_size = schema.Int(
+        title=_(u"label_title_bordersize",
+            default=u"Size for the border."),
+        description=_(u"label_description_bordersize",
+            u"How big should the qr code's border be?"),
+        default = 4,
+        min = 4,
+        max = 40
     )
 
 class Assignment(base.Assignment):
@@ -61,10 +73,10 @@ class Assignment(base.Assignment):
     # def __init__(self, some_field=u""):
     #    self.some_field = some_field
     
-    def __init__(self, anoncondition=True, size=4):
+    def __init__(self, anoncondition=True, size=4, border_size=4):
         self.anoncondition = anoncondition
         self.size = size
-
+        self.border_size = border_size
 
     @property
     def title(self):
