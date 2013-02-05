@@ -8,6 +8,7 @@
   
   <!-- -*- extra stuff goes here -*- -->
  <include package=".browser" />
+  <include package=".portlets" />
 
  
   <!-- Register the installation GenericSetup extension profile -->

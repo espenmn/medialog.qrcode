@@ -3,4 +3,4 @@
            <browser:page		for="*"        name="qrcode"		class="medialog.qrcode.browser.qrview.QRImage"        permission="zope2.View"
         />
 
-        <!-- Register the portlet -->     <!-- If the portlet has no configurable parameters, you can remove          the EditForm declaration in qrportlet.py and delete          the 'editview' attribute from this statement.       -->     <plone:portlet         name="medialog.qrcode.QRPortlet"         interface=".qrportlet.IQRPortlet"         assignment=".qrportlet.Assignment"         view_permission="zope2.View"         renderer=".qrportlet.Renderer"         addview =".qrportlet.AddForm"         />    </configure>
+    </configure>

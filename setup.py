@@ -1,11 +1,11 @@
 from setuptools import setup, find_packages
 import os
 
-version = '0.1.2'
+version = '0.1.3'
 
 setup(name='medialog.qrcode',
       version=version,
-      description="QRcode views for plone 4 (ONLY).",
+      description="QRcode views and portlet for Plone.",
       long_description=open("README.txt").read(),
       # Get more strings from
       # http://pypi.python.org/pypi?%3Aaction=list_classifiers
@@ -13,10 +13,10 @@ setup(name='medialog.qrcode',
         "Framework :: Plone",
         "Programming Language :: Python",
         ],
-      keywords='',
+      keywords='QRcode QR generator ',
       author='Espen Moe-Nilssen',
       author_email='espen@medialog.no',
-      url='http://svn.plone.org/svn/collective/',
+      url='https://github.com/espenmn/medialog.qrcode/',
       license='GPL',
       packages=find_packages(exclude=['ez_setup']),
       namespace_packages=['medialog'],

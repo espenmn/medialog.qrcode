@@ -10,10 +10,6 @@ from plone.memoize.instance import memoize
 
 from zope.component import getMultiAdapter
 
-<<<<<<< HEAD
-
-=======
->>>>>>> Moved portlet to its own folder
 #from medialog.qrcode import MessageFactory as _
 from Products.CMFPlone import PloneMessageFactory as _
 
@@ -32,20 +28,12 @@ class IQRPortlet(IPortletDataProvider):
     # empty interface - see also notes around the add form and edit form
     # below.
     
-<<<<<<< HEAD
-    condition = schema.Bool(
-        title=_(u"label_title_condition",
-            default=u"Show for not logged in users."),
-        description=_(u"label_description_condition",
-            u"You can choose to show this only for logged in users."),
-=======
     anoncondition = schema.Bool(
         title=_(u"label_title_condition",
             default=u"Hide portlet for anonymous users?"),
         description=_(u"label_description_condition",
             u"Should we show the portlet only to registered users?"),
         default=True,
->>>>>>> Moved portlet to its own folder
     )
     
     size = schema.Int(
@@ -53,11 +41,7 @@ class IQRPortlet(IPortletDataProvider):
             default=u"Size for the qrcode."),
         description=_(u"label_description_size",
             u"How big should the qr code image be?"),
-<<<<<<< HEAD
-            defult = '4',
-=======
         default = 4,
->>>>>>> Moved portlet to its own folder
     )
 
 class Assignment(base.Assignment):
@@ -99,18 +83,6 @@ class Renderer(base.Renderer):
 
     render = ViewPageTemplateFile('qrportlet.pt')
     
-<<<<<<< HEAD
-    portal_state = getMultiAdapter((context, self.request), name=u'plone_portal_state')
-    self.anonymous = portal_state.anonymous()  # whether or not the current user is Anonymous
-        
-    
-    @property
-    def available(self):
-        """Show the portlet only if some condition. Need to test this."""
-        return not self.anonymous 
-
-
-=======
     @property
     def available(self):
         """Show the portlet only if condition is right."""
@@ -123,7 +95,6 @@ class Renderer(base.Renderer):
         else:
 			return True
 			 
->>>>>>> Moved portlet to its own folder
 class AddForm(base.AddForm):
     """Portlet add form.
 
