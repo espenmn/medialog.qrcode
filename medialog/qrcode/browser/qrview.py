@@ -18,7 +18,7 @@ class QRImage(BrowserView):
     """ A browser view to create QR codes """
     
     def __call__(self, REQUEST):
-    	size = self.request.get('size', 40)  #For later use
+    	size = self.request.get('size', 10)  #For later use
     	border = self.request.get('border', 4)  #For later use
     	view = self.request.get('view', '')  #Makes it possible to add another view to the url
     	other_url = self.request.get('url', '')    #Makes it possible to use another url
