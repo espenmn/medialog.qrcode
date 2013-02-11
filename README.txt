@@ -19,5 +19,14 @@ http://mysite.com/@@qrimage?url=http://somewhere.com/somepage
 To get a qrcode for url=http://somewhere.com/somepage
 
 
+Viewlet
+----------
+There is also a related viewlet.
+The main purpose for this will when printing the page.
+You can enable the viewlet by adding medialog.qrcode.interfaces.IqrcodeLayer to your cogent.
+
+
+
+
 Note:
 If the browser view is used on an ATlink object with external link, you will get the QR-code for that URL.
