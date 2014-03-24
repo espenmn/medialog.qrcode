@@ -3,4 +3,4 @@
            <browser:page		for="*"        name="qrcode"		class="medialog.qrcode.browser.qrviews.QRImage"        permission="zope2.View"
         />
 
-        <browser:page        for="*"        name="qrsummary"        class="medialog.qrcode.browser.qrviews.QrSummaryView"        template="qrsummaryview.pt"        allowed_interface="medialog.qrcode.browser.qrviews.IQrSummaryView"        permission="zope2.View"    /></configure>
+        <browser:page        for="*"        name="qrsummary"        class="medialog.qrcode.browser.qrviews.QrSummaryView"        template="qrsummaryview.pt"        allowed_interface="medialog.qrcode.browser.qrviews.IQrSummaryView"        permission="zope2.View"    /></configure>

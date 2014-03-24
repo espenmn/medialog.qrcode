@@ -13,4 +13,12 @@
         permission="zope2.View"
         />
  
+     <browser:viewlet
+        name="medialog.qrcode.qrviewlet"
+        manager="plone.app.layout.viewlets.interfaces.IBelowContentBody"
+        for="medialog.qrcode.behavior.IQRbehavior"
+        template="qrviewlet.pt"
+        permission="zope2.View"
+        />
+ 
 </configure>

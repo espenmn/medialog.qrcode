@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '0.1.5'
+version = '0.2'
 
 setup(name='medialog.qrcode',
       version=version,
@@ -33,6 +33,7 @@ setup(name='medialog.qrcode',
       [z3c.autoinclude.plugin]
       target = plone
       """,
-      setup_requires=["PasteScript"],
+      setup_requires=[
+                      "Plone.behavior",],
       paster_plugins=["ZopeSkel"],
       )
